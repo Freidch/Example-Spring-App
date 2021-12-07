@@ -20,6 +20,7 @@ pipeline {
                 sh './mvnw test'
             }
         }
+
         stage('Build') {
             agent any
             when {
